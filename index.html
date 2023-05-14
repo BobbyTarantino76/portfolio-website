@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width =device-width, initial-scale=1.0">
+    <title>Matija Personal Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5df8fa519e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="portfolio-images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer/Junior Developer</p>
+            <h1>Hi, I'm <span>Matija</span><br> Zuber from Monetenegro</h1>
+        </div>
+    </div>
+</div>
+-<!-----------About----------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="portfolio-images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a student of computer science I very much enjoy spending time on the computer,
+                    working on improving my programming skills and trying to solve different problems and
+                    puzzles.<br><br>I like traveling across my country with my girlfriend and talking to different
+                    people about their culture and their hardships that they face, meeting new people is very
+                    important for me.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web/App Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Intermino - Salesforce Practial Seminar</li>
+                        <li><span>2019 - 2021</span><br>Wine App Development for University of Donja Gorica</li>
+                        <li><span>2018 - 2019</span><br>Assingment for a Health-Public Service Application</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>Primary-School Education</li>
+                        <li><span>2020</span><br>High-School Education</li>
+                        <li><span>2020 - Current</span><br>Bachelor Degree</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+-<!-----------Services----------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p> Conceptualizing original website design ideas that bring simplicity and user friendliness. </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Responsible for the design and implementation of all the experiences a user has when interacting with a digital tool, such as a website.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Develop intuitive, usable, and engaging interactions and visual designs for mobile</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------Portfolio----------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="portfolio-images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Social Media App is an internet-based form of communication. Social Media App platforms allow users to have conversations, share information and create web content!
+                        </p>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="portfolio-images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The primary purpose of the Music App is to play music available in the databases of the service, compose custom playlists and suggest similar songs!</p>
+                        <a href="https://newsroom.spotify.com/company-info/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="portfolio-images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Online Shopping App is an app that allows customers to browse and purchase items from an online store at great prices and good service! </p>
+                        <a href="https://www.ebay.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!------------------Contact-------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>matijaazuber@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+38267233466</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/matija.zuber/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/matijazuber/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/matijazuber/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="portfolio-images/CV -Europass - Matija  Zuber.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Matija. Made with <i class="fa-solid fa-heart"></i> HTML,CSS and Javascript</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document .getElementsByClassName("tab-links");
+    var tabcontents = document .getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+<script>
+
+var sidemeu = document.getElementById("sidemenu")
+
+function openmenu(){
+    sidemeu.style.right = "0";
+}
+function closemenu(){
+    sidemeu.style.right = "-200px";
+}
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby9j0Tb69wfKySi7LKkLAXo8nFoZK19YF5YW9peQxxCcdM0jOVT1hamrCZ3124FbsQBHA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
